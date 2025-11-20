@@ -12,7 +12,7 @@ A stunning, production-ready Text-to-Speech app built with modern Expo (Router +
 - 100% TypeScript + Redux Toolkit
 
 **Live Android APK (EAS Build):**  
-https://expo.dev/artifacts/eas/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.apk  
+https://expo.dev/artifacts/eas/fMz8XcCu4HEpeH5K94fR3o.apk  
 *(Built with `eas build --platform android --profile preview`)*
 
 ### Tech Stack
