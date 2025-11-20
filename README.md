@@ -1,50 +1,73 @@
-# Welcome to your Expo app 👋
+# Text to Speech Pro — Expo SDK 54 + TypeScript + Redux Toolkit
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A stunning, production-ready Text-to-Speech app built with modern Expo (Router + SDK 54), featuring:
 
-## Get started
+- Voice selection (all device voices)
+- Real-time pitch & rate control
+- Pause/Resume (iOS) + graceful fallback (Android)
+- Save favorite phrases (AsyncStorage)
+- Dark/Light mode with persistence
+- Glassmorphism UI + Moti animations
+- Bottom sheet settings
+- 100% TypeScript + Redux Toolkit
 
-1. Install dependencies
+**Live Android APK (EAS Build):**  
+https://expo.dev/artifacts/eas/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.apk  
+*(Built with `eas build --platform android --profile preview`)*
 
-   ```bash
-   npm install
-   ```
+### Tech Stack
+- Expo SDK 54 (React Native 0.81 + React 19)
+- Expo Router (file-based routing)
+- Redux Toolkit + React-Redux
+- Moti + Reanimated (animations)
+- @gorhom/bottom-sheet
+- expo-speech, expo-linear-gradient
+- react-native-safe-area-context
 
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+### Installation & Setup
 
 ```bash
-npm run reset-project
-```
+# 1. Clone repo
+git clone https://github.com/yourusername/tts-pro.git
+cd tts-pro
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+# 2. Install dependencies
+npm install
+# or
+yarn
 
-## Learn more
+# 3. Install Expo (if needed)
+npm install -g expo-cli
 
-To learn more about developing your project with Expo, look at the following resources:
+# 4. Start the app
+npx expo start --clear
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+# Scan QR code with Expo Go (iOS/Android)
+# Or press 'a' for Android emulator, 'i' for iOS simulator
 
-## Join the community
 
-Join our community of developers creating universal apps.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+
+
+ Folder Structure
+
+TTS-Pro/
+├── app/
+│   ├── _layout.tsx
+│   └── index.tsx
+├── src/
+│   ├── components/
+│   │   └── SettingsBottomSheet.tsx
+│   ├── context/
+│   │   └── ThemeContext.tsx
+│   └── Redux/
+│       ├── store/
+│       │   └── store.ts
+│       └── store/
+│           └── speechSlice.ts
+├── assets/
+├── app.json
+├── package.json
+├── babel.config.js
+└── README.md        ← This one below
